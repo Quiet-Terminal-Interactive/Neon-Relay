@@ -1,0 +1,15 @@
+[Unit]
+Description=QTI Neon Relay
+After=network.target
+
+[Service]
+Type=simple
+User=qti
+WorkingDirectory=/home/qti/neon-relay
+ExecStart=/usr/bin/java -jar /home/qti/neon-relay/qti-neon-relay.jar
+EnvironmentFile=/home/qti/neon-relay/.env
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
