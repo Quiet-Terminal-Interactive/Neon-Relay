@@ -10,6 +10,8 @@ This repo runs the QTI public relay that anyone can connect to for testing or us
 
 ## Connecting to the Relay
 
+The relay is hosted at **`neon-relay.quietterminal.co.uk:7777`**.
+
 To connect securely, trust the relay's public certificate using `DtlsConfig.withTrustStore`:
 
 ```java
